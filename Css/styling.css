@@ -1,0 +1,25 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.container{
+    width:auto;
+    height:100vh;
+    background-color:black;
+}
+.navbar{
+    display:flex;
+    width:auto;
+    height:auto;
+    justify-content:center;
+    gap:10px;
+}
+.navbar_button{
+    width:150px;
+    height:30px;
+    background-color:rgb(34, 34, 34);
+    border:none;
+    color:rgb(116, 116, 116);
+    font-family:fancy;
+}
