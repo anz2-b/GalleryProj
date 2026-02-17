@@ -29,7 +29,14 @@
     color:rgb(116, 116, 116);
     font-family:"birthstone-regular";
     font-size:25zpx;
-    text-shadow:0px 0px 5px #ffff;
+    transform:scale(1);
+    text-shadow:0px 0px 0px #ffff;
+    transition:transform 0.2s ease-in-out
+}
+.navbar_button:hover{
+    text-shadow:0px 0px 15px #ffff;
+    transform:scale(1.05);
+    background-color:rgb(43, 43, 43)
 }
 #Profile{
     border-bottom-left-radius:25px;
