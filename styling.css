@@ -71,7 +71,7 @@ body {
 .player{
     display:flex;
     justify-content:center;
-    padding-top:10%;
+    padding-top:5%;
     align-items:center;
 }
 
