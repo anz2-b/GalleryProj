@@ -12,12 +12,28 @@
     <body>
     <div class="container">
     <div class="navbar">
-        <a href="index.html" id="Profile" class="navbar_button" >Profile</a>
-        <a href="Gallery.html" id="Gallery" class="navbar_button" ">Gallery</a>
-        <a href="Timer.html" id="Timer" class="navbar_button" >Timer</a>
-        <a href="Thoughts.html" id="Thoughts" class="navbar_button" >Thoughts</a>
-        
+        <a href="index.html" id="Profile" class="navbar_button">Profile</a>
+        <a href="Gallery.html" id="Gallery" class="navbar_button">Gallery</a>
+        <a href="Timer.html" id="Timer" class="navbar_button">Timer</a>
+        <a href="Thoughts.html" id="Thoughts" class="navbar_button">Quotes</a>
+
     </div>
+        <div class="time_area">
+            <div class="minutes_flow">
+            <button class="time_change" id="fiveminus">-5 min.</button>
+            <button class="time_change" id="oneminus">-1 min.</button>
+            <p id="the_time">25:00</p>
+            <button class="time_change" id="oneplus">+1 min.</button>
+            <button class="time_change" id="fiveplus">+5 min.</button>
+            </div>
+            <div id="t_buttons">
+                <button class="timer_bt" id="start_bt">Start</button>
+                <button class="timer_bt" id="pause_bt">Pause</button>
+                <button class="timer_bt" id="reset_bt">Reset</button>
+                <button class="timer_bt" id="breakwork_bt">Switch to break</button>
+            </div>
+        </div>
     </div>
+    <script src="timerfunc.js"></script>
 </body>
 </html>
