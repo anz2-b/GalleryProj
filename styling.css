@@ -12,7 +12,7 @@ body {
 .container{
     height:100vh;
 }
-/* navbar and buttons */
+/* navbar */
 .navbar{
     display:flex;
     justify-content:center;
@@ -25,7 +25,6 @@ body {
     border-bottom-right-radius:25px;
 }
 .navbar_button{
-    font-family:"Quintessential", serif;
     font-weight:100;
     font-style:normal;
     width:250px;
@@ -34,19 +33,18 @@ body {
     border:none;
     color:rgb(255, 255, 255);
     font-size:20px;
-    transform:scale(1);
-    text-shadow:0px 0px 0px #ffff;
-    transition:transform 0.2s ease-in-out,text-shadow 0.15s ease-in-out;
+    transition:transform 0.2s ease-in-out, text-shadow 0.15s ease-in-out;
     text-decoration:none;
-    align-content:center;
-    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .navbar_button:hover{
     text-shadow:0px 0px 10px #ffff;
     transform:scale(1.05);
     background-color:rgb(43, 43, 43);
 }
-/*third */
+/* profile */
 .mid{
     display:flex;
     height:95vh;
@@ -64,7 +62,7 @@ body {
 }
 .second{
     color:white;
-    padding-top:4%
+    padding-top:4%;
 }
 .player{
     display:flex;
@@ -72,6 +70,7 @@ body {
     padding-top:5%;
     align-items:center;
 }
+/* quotes */
 #quote{
     color:white;
     font-size:20px;
@@ -87,26 +86,22 @@ body {
     flex-direction:column;
 }
 #newQuoteBtn{
-    font-family: 'Quintessential', cursive;
     background-color:rgb(34, 34, 34);
     border:none;
     color:rgb(255, 255, 255);
     font-size:20px;
-    transform:scale(1);
-    text-shadow:0px 0px 0px #ffff;
-    transition:transform 0.2s ease-in-out,text-shadow 0.15s ease-in-out;
-    text-decoration:none;
-    align-content:center;
-    text-align:center;
+    transition:transform 0.2s ease-in-out, text-shadow 0.15s ease-in-out;
     border-radius:10px;
     width:10%;
     height:4%;
+    cursor:pointer;
 }
 #newQuoteBtn:hover{
     text-shadow:0px 0px 10px #ffff;
     transform:scale(1.05);
     background-color:rgb(43, 43, 43);
 }
+/* timer */
 .minutes_flow {
     display:flex;
     flex-direction:row;
@@ -114,66 +109,170 @@ body {
     justify-content:center;
 }
 .time_area{
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
     gap:4%;
     height:100vh;
     width:100%;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
 }
 #the_time {
     color:white;
     font-size:100px;
 }
 .timer_bt{
-    font-family: 'Quintessential', cursive;
-    background-color: #222;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-    margin: 0 6px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.2s, box-shadow 0.2s, text-shadow 0.2s;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    background-color:#222;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:12px 20px;
+    margin:0 6px;
+    font-size:20px;
+    cursor:pointer;
+    transition:background 0.2s, transform 0.2s, box-shadow 0.2s, text-shadow 0.2s;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
 .timer_bt:hover {
-    background-color: #333;
-    transform: scale(1.07);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.24);
-    text-shadow: 0 0 8px #fff, 0 0 16px #fff;
-}
-.timer_bt:hover {
-    background-color: #333;
-    transform: scale(1.07);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.24);
+    background-color:#333;
+    transform:scale(1.07);
+    box-shadow:0 4px 12px rgba(0,0,0,0.24);
+    text-shadow:0 0 8px #fff, 0 0 16px #fff;
 }
 .time_change {
     height:50px;
     align-self:center;
-    font-family: 'Quintessential', cursive;
-    background-color: #222;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-    margin: 0 6px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.2s, box-shadow 0.2s, text-shadow 0.2s;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    background-color:#222;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:12px 20px;
+    margin:0 6px;
+    font-size:20px;
+    cursor:pointer;
+    transition:background 0.2s, transform 0.2s, box-shadow 0.2s, text-shadow 0.2s;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
 .time_change:hover {
-    background-color: #333;
-    transform: scale(1.07);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.24);
-    text-shadow: 0 0 8px #fff, 0 0 16px #fff;
+    background-color:#333;
+    transform:scale(1.07);
+    box-shadow:0 4px 12px rgba(0,0,0,0.24);
+    text-shadow:0 0 8px #fff, 0 0 16px #fff;
 }
 
+/* ── Responsive ────────────────────────────────────────── */
 
+/* Tablet and below: 4 nav buttons at 250px each = 1000px+,
+   so wrap them into a 2×2 grid. */
+@media (max-width: 1050px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+    .navbar_button {
+        width: calc(50% - 1px);
+        font-size: 17px;
+    }
+    /* Recalculate corner radii for the 2×2 grid:
+       Row 1: Profile  | Gallery
+       Row 2: Timer    | Quotes
+       Profile's bottom-left is now an internal edge — reset it.
+       Timer takes the new external bottom-left corner.
+       Quotes already owns the external bottom-right corner. */
+    #Profile { border-bottom-left-radius: 0; }
+    #Timer   { border-bottom-left-radius: 25px; }
+}
 
+/* Mobile phones */
+@media (max-width: 600px) {
+    /* Let pages taller than the viewport scroll naturally */
+    .container {
+        height: auto;
+        min-height: 100vh;
+    }
 
+    /* navbar */
+    .navbar_button {
+        height: 44px;
+        font-size: 16px;
+    }
 
+    /* ── Profile page ── */
+    .mid {
+        flex-direction: column;
+        height: auto;
+    }
+    .first {
+        justify-content: center;
+    }
+    #toji {
+        max-width: 100%;
+        max-height: 45vh;
+        object-fit: contain;
+        display: block;
+    }
+    .second {
+        padding: 16px;
+    }
+    #toji_desc {
+        font-size: 18px;
+    }
+    .player {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        gap: 8px;
+    }
 
+    /* ── Quotes page ── */
+    .thought_center {
+        /* 2-row navbar ≈ 90px; fill the remaining viewport */
+        min-height: calc(100vh - 90px);
+        height: auto;
+        padding: 16px;
+        gap: 20px;
+    }
+    #quote {
+        font-size: 16px;
+        height: auto;
+        min-height: 60px;
+        padding: 0 8px;
+    }
+    #newQuoteBtn {
+        width: auto;
+        height: auto;
+        padding: 12px 32px;
+        font-size: 16px;
+    }
+
+    /* ── Timer page ── */
+    .time_area {
+        min-height: calc(100vh - 90px);
+        height: auto;
+        gap: 24px;
+        padding: 16px;
+    }
+    #the_time {
+        font-size: 64px;
+    }
+    .minutes_flow {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .time_change {
+        padding: 10px 14px;
+        font-size: 16px;
+        height: 44px;
+        margin: 0;
+    }
+    #t_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+    .timer_bt {
+        padding: 10px 16px;
+        font-size: 16px;
+        margin: 0;
+    }
+}

@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="styling.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Imperial+Script&family=Quintessential&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
 </head>
-    <body>
+<body>
     <div class="container">
-    <div class="navbar">
-        <a href="index.html" id="Profile" class="navbar_button" >Profile</a>
-        <a href="Gallery.html" id="Gallery" class="navbar_button">Gallery</a>
-        <a href="Timer.html" id="Timer" class="navbar_button" >Timer</a>
-        <a href="Thoughts.html" id="Thoughts" class="navbar_button" >Quotes</a>
-    </div>
-    <div class="thought_center">
-        <p id="quote"></p>
-        <button id="newQuoteBtn">New Quote</button>
-    </div>
+        <nav class="navbar">
+            <a href="index.html" id="Profile" class="navbar_button">Profile</a>
+            <a href="Gallery.html" id="Gallery" class="navbar_button">Gallery</a>
+            <a href="Timer.html" id="Timer" class="navbar_button">Timer</a>
+            <a href="Thoughts.html" id="Thoughts" class="navbar_button">Quotes</a>
+        </nav>
+        <main class="thought_center">
+            <p id="quote" aria-live="polite"></p>
+            <button type="button" id="newQuoteBtn">New Quote</button>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
